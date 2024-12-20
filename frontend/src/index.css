@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Base styles for nav-link */
+.nav-link,
+.dropdown-toggle {
+  color: white !important; /* Ensure text is visible by default */
+}
+
+/* Highlight active nav-link */
+.nav-link.bg-primary,
+.dropdown-toggle.bg-primary {
+  color: white !important; /* Active text color */
+}
+
+/* Default dropdown toggle text color */
+.dropdown-toggle {
+  color: white !important;
+}
+
+/* Active dropdown button - background and text */
+.dropdown-toggle.bg-primary {
+  color: white !important;
+  background-color: #0d6efd !important; /* Bootstrap primary blue */
+}
+
+/* Hover effect for inactive dropdown button */
+.dropdown-toggle:not(.bg-primary):hover {
+  color: #0d6efd !important; /* Bootstrap primary color */
+  background-color: #e9ecef !important; /* Light grey */
+  border-radius: 5px;
+}
+
+/* Ensure User Details link remains white when active */
+.dropdown-menu .dropdown-item.bg-primary {
+  color: white !important;
+}
